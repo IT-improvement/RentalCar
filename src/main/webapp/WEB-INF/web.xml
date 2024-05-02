@@ -9,4 +9,23 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+  <!-- JSP MAPPING -->
+  <servlet>
+  	<servlet-name>header</servlet-name>
+  	<jsp-file>/views/modules/header.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>header</servlet-name>
+ 	<url-pattern>/header</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>footer</servlet-name>
+  	<jsp-file>/views/modules/footer.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>footer</servlet-name>
+ 	<url-pattern>/footer</url-pattern>
+  </servlet-mapping>
 </web-app>

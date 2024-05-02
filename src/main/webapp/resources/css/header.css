@@ -1,0 +1,28 @@
+.Header {
+    width: 1440px;
+    height: 200px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: white;
+}
+
+.SecondMenu {
+    width: 1417px;
+    height: 81px;
+    left: 13px;
+    top: 112px;
+    position: absolute;
+    border: 1px black solid;
+}
+
+.FirstMenu {
+    width: 1417px;
+    height: 81px;
+    left: 13px;
+    top: 12px;
+    position: absolute;
+    border: 1px black solid;
+}
+
+/* Additional styling for header elements goes here */
