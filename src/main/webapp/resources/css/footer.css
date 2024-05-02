@@ -1,18 +1,15 @@
 .Footer {
-    width: 1440px;
+    width: 100%; /* Adjust as needed */
     height: 200px;
-    left: 2px;
-    top: 1072px;
-    position: absolute;
+    position: relative; /* Change position to relative */
     background: white;
+    margin-top: 20px; /* Add margin to create space above the footer */
 }
 
 .Rectangle2 {
-    width: 1375px;
+    width: 95%; /* Adjust as needed */
     height: 172px;
-    left: 25px;
-    top: 14px;
-    position: absolute;
+    margin: 0 auto; /* Center the rectangle */
     border: 1px black solid;
 }
 
