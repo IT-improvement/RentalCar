@@ -21,7 +21,7 @@ public class UserResponseDto {
 		this.gender = gender;
 	}
 
-	public UserResponseDto(User user) {
+	public UserResponseDto(UserRequestDto user) {
 		this.id = user.getId();
 		this.password = user.getPassword();
 		this.name = user.getName();
