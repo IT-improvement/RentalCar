@@ -5,3 +5,4 @@ build/
 src/main/webapp/WEB-INF/lib/
 /bin/
 context.xml
+.idea
