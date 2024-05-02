@@ -10,7 +10,7 @@
 </head>
 <c:import url="/header"/>
 <body>
-<form action="" method="post">
+<form action="/signUpFormAction" method="post">
 	<div class="Group33">
             <div>¾ÆÀÌµð<input type="text" name="id"></div>
         </div>

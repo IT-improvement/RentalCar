@@ -10,6 +10,17 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   
+  <!-- JAVA MAPPING -->
+  <servlet>
+  	<servlet-name>signUpFormAction</servlet-name>
+  	<servlet-class>service.user.controller.SignUpFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>signUpFormAction</servlet-name>
+ 	<url-pattern>/signUpFormAction</url-pattern>
+  </servlet-mapping>
+  
+  
   <!-- JSP MAPPING -->
   <servlet>
   	<servlet-name>header</servlet-name>
