@@ -1,0 +1,19 @@
+.Footer {
+    width: 1440px;
+    height: 200px;
+    left: 2px;
+    top: 1072px;
+    position: absolute;
+    background: white;
+}
+
+.Rectangle2 {
+    width: 1375px;
+    height: 172px;
+    left: 25px;
+    top: 14px;
+    position: absolute;
+    border: 1px black solid;
+}
+
+/* Additional styling for footer elements goes here */
