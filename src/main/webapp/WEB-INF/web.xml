@@ -20,6 +20,15 @@
  	<url-pattern>/signUpFormAction</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>signInFormAction</servlet-name>
+  	<servlet-class>service.user.controller.SignInFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>signInFormAction</servlet-name>
+ 	<url-pattern>/signInFormAction</url-pattern>
+  </servlet-mapping>
+  
   
   <!-- JSP MAPPING -->
   <servlet>
@@ -47,5 +56,13 @@
   <servlet-mapping>
   	<servlet-name>signUp</servlet-name>
  	<url-pattern>/signUp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>signIn</servlet-name>
+  	<jsp-file>/views/user/signIn.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>signIn</servlet-name>
+ 	<url-pattern>/signIn</url-pattern>
   </servlet-mapping>
 </web-app>
