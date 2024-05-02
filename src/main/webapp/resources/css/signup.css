@@ -1,41 +1,23 @@
-/* Style for form groups */
-.Group33,
-.Group36,
-.Group37,
-.Group38,
-.Group39,
-.Group40,
-.Group41,
-.Group35 {
-    margin-bottom: 20px;
-}
-
-/* Style for text inputs */
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    height: 40px;
-    margin-top: 5px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Style for submit button */
-input[type="submit"] {
-    width: 100%;
-    height: 50px;
-    background-color: #007bff;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+form {
+    padding: 20px;
     margin-top: 20px;
 }
 
-/* Additional styling for individual form groups if needed */
-.Group35 input[type="submit"] {
-    margin-top: 10px;
+form div {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #FFA500;
+    padding: 5px;
+    width: 200px; /* 폼 입력 필드의 너비 */
+}
+
+input[type="submit"] {
+    background-color: #FFA500; /* 회원가입 버튼 배경색 */
+    color: #fff; /* 버튼 텍스트 색상 */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
 }
