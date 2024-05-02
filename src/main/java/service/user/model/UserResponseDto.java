@@ -1,6 +1,6 @@
 package service.user.model;
 
-public class UserRequestDto {
+public class UserResponseDto {
 	public String id;
 	public String password;
 	public String name;
@@ -8,8 +8,8 @@ public class UserRequestDto {
 	public String email;
 	public String brithday;
 	public String gender;
-	
-	public UserRequestDto(String id, String password, String name, String phonenumber, String email, String brithday,
+
+	public UserResponseDto(String id, String password, String name, String phonenumber, String email, String brithday,
 			String gender) {
 		super();
 		this.id = id;
@@ -19,6 +19,16 @@ public class UserRequestDto {
 		this.email = email;
 		this.brithday = brithday;
 		this.gender = gender;
+	}
+
+	public UserResponseDto(User user) {
+		this.id = user.getId();
+		this.password = user.getPassword();
+		this.name = user.getName();
+		this.phonenumber = user.getPhonenumber();
+		this.email = user.getEmail();
+		this.brithday = user.getBrithday();
+		this.gender = user.getGender();
 	}
 
 	public String getId() {

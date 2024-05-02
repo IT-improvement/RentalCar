@@ -1,6 +1,9 @@
 package service.user.model;
 
-public class UserRequestDto {
+import java.sql.Date;
+import java.sql.Timestamp;
+
+public class User {
 	public String id;
 	public String password;
 	public String name;
@@ -8,9 +11,11 @@ public class UserRequestDto {
 	public String email;
 	public String brithday;
 	public String gender;
-	
-	public UserRequestDto(String id, String password, String name, String phonenumber, String email, String brithday,
-			String gender) {
+	public Timestamp reg_date;
+	public Timestamp edit_date;
+
+	public User(String id, String password, String name, String phonenumber, String email, String brithday,
+			String gender, Timestamp reg_date, Timestamp edit_date) {
 		super();
 		this.id = id;
 		this.password = password;
@@ -19,6 +24,8 @@ public class UserRequestDto {
 		this.email = email;
 		this.brithday = brithday;
 		this.gender = gender;
+		this.reg_date = reg_date;
+		this.edit_date = edit_date;
 	}
 
 	public String getId() {
@@ -75,6 +82,22 @@ public class UserRequestDto {
 
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+
+	public Timestamp getReg_date() {
+		return reg_date;
+	}
+
+	public void setReg_date(Timestamp reg_date) {
+		this.reg_date = reg_date;
+	}
+
+	public Timestamp getEdit_date() {
+		return edit_date;
+	}
+
+	public void setEdit_date(Timestamp edit_date) {
+		this.edit_date = edit_date;
 	}
 
 }
