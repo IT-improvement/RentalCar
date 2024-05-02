@@ -10,10 +10,9 @@ public class UserRequestDto {
 	public String email;
 	public String brithday;
 	public String gender;
-	public Date reg_date;
 	
 	public UserRequestDto(String id, String password, String name, String phonenumber, String email, String brithday,
-			String gender, Date reg_date) {
+			String gender) {
 		super();
 		this.id = id;
 		this.password = password;
@@ -22,7 +21,6 @@ public class UserRequestDto {
 		this.email = email;
 		this.brithday = brithday;
 		this.gender = gender;
-		this.reg_date = reg_date;
 	}
 
 	public String getId() {
@@ -81,12 +79,4 @@ public class UserRequestDto {
 		this.gender = gender;
 	}
 
-	public Date getReg_date() {
-		return reg_date;
-	}
-
-	public void setReg_date(Date reg_date) {
-		this.reg_date = reg_date;
-	}
-	
 }
