@@ -21,13 +21,21 @@
                 <%
             }else{
             	%>
-                <div><input type="button" value="마이페이지" onclick="location.href='/'"></div>
+                <div><input type="button" value="마이페이지" onclick="location.href='/main'"></div>
 			<%            	
             }
                 %>
             </div>
             <div class="Group2">
+            <%
+            if(user==null){
+            %>
                 <div><input type="button" value="로그인" onclick="location.href='/signIn'"></div>
+            <%
+            }else{
+            %>
+                <div><input type="button" value="로그아웃" onclick="location.href='/signInFormAction'"></div>
+            <%} %>
             </div>
         </div>
         <div class="SecondMenu">
