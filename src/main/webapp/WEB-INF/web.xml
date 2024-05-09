@@ -29,6 +29,42 @@
  	<url-pattern>/signInFormAction</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>boardListFormAction</servlet-name>
+  	<servlet-class>service.board.controller.BoardListFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>boardListFormAction</servlet-name>
+ 	<url-pattern>/boardListFormAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>boardViewFormAction</servlet-name>
+  	<servlet-class>service.board.controller.BoardViewFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>boardViewFormAction</servlet-name>
+ 	<url-pattern>/boardViewFormAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>boardDeleteFormAction</servlet-name>
+  	<servlet-class>service.board.controller.BoardDeleteFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>boardDeleteFormAction</servlet-name>
+ 	<url-pattern>/boardDeleteFormAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>boardUpdateFormAction</servlet-name>
+  	<servlet-class>service.board.controller.BoardUpdateFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>boardUpdateFormAction</servlet-name>
+ 	<url-pattern>/boardUpdateFormAction</url-pattern>
+  </servlet-mapping>
+  
   
   <!-- JSP MAPPING -->
   <servlet>
@@ -69,11 +105,38 @@
   
   <servlet>
   	<servlet-name>main</servlet-name>
-  	<jsp-file>/views/user/main.jsp</jsp-file>
+  	<jsp-file>/views/main/main.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
   	<servlet-name>main</servlet-name>
  	<url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>boardList</servlet-name>
+  	<jsp-file>/views/board/boardList.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>boardList</servlet-name>
+ 	<url-pattern>/boardList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>boardWrite</servlet-name>
+  	<jsp-file>/views/board/boardWrite.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>boardWrite</servlet-name>
+ 	<url-pattern>/boardWrite</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>board</servlet-name>
+  	<jsp-file>/views/board/board.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>board</servlet-name>
+ 	<url-pattern>/board</url-pattern>
   </servlet-mapping>
   
 </web-app>
