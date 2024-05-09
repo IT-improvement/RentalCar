@@ -15,34 +15,11 @@
 			<img class="adjimage" src="/resources/image/adj_1.jpg">
 		</div>
 		<div class="car">
-			<div>
-				<img alt="사진없음" src="/resources/image/CAR001_1.png">
-				<a>이름</a>
-			</div>
-			<div>
-				<img alt="사진없음" src="/resources/image/CAR002_1.png">
-				<a>이름</a>
-			</div>
-			<div>
-				<img alt="사진없음" src="/resources/image/CAR003_1.png">
-				<a>이름</a>
-			</div>
-			<div>
-				<img alt="사진없음" src="/resources/image/CAR004_1.png">
-				<a>이름</a>
-			</div>
-			<div>
-				<img alt="사진없음" src="/resources/image/CAR005_1.png">
-				<a>이름</a>
-			</div>
-			<div>
-				<img alt="사진없음" src="/resources/image/CAR006_1.png">
-				<a>이름</a>
-			</div>
-			<div>
-				<img alt="사진없음" src="/resources/image/CAR007_1.png">
-				<a>이름</a>
-			</div>
+			<c:forEach items="${carList }" var="car" varStatus="loop">
+				<div>
+					<img alt="사진없음" src="${car.imageUrl }"> <a>${car.name }</a>
+				</div>
+			</c:forEach>
 		</div>
 	</div>
 </body>
