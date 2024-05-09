@@ -19,6 +19,10 @@ public class BoardListFormAction extends HttpServlet {
 	public BoardListFormAction() {
         super();
     }
+	
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		BoardDao dao = BoardDao.getInstance();
