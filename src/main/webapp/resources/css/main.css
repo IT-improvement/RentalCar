@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.content {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	margin-bottom: 100px;
+}
+
+.adj, .car {
+	flex: 1; 
+	overflow-y: auto;
+}
+
+.adj {
+    overflow: hidden;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.adj img {
+    width: 100%; 
+    height: auto; 
+    max-width: auto; 
+    max-height: 100%; 
+}
+.car {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.car div {
+	width: 25%; 
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.car img {
+	width: 100%;
+	height: auto;
+}
