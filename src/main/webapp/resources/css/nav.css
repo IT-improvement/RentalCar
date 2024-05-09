@@ -1,6 +1,5 @@
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: rgb(255,247,259);
     padding: 20px;
     border-bottom: 2px solid #FFA500; /* 밑줄 스타일 */
 }
@@ -11,18 +10,13 @@ header {
     justify-content: space-between;
 }
 
-.Logo {
-    width: 100px; /* 로고 크기에 맞게 조정 */
-    height: 50px; /* 로고 크기에 맞게 조정 */
-    background-color: #FFA500; /* 로고 배경색 */
-}
 
 .Group1,
 .Group2 {
     display: flex;
     align-items: center;
 }
-
+.Logo input[type="button"],
 .Group1 input[type="button"],
 .Group2 input[type="button"] {
     background-color: #FFA500; /* 버튼 배경색 */
@@ -34,13 +28,21 @@ header {
 
 .SecondMenu {
     display: flex;
+     margin-top: 20px;
 }
 
 .SecondMenu div {
     margin-right: 20px;
     cursor: pointer;
 }
+a{
+	text-decoration:none;
+	color:black;
+}
 
+a:hover{
+	color:lightgray;
+}
 
 footer {
     background-color: #333;

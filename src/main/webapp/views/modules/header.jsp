@@ -11,7 +11,7 @@
 <body>
 <header>
         <div class="FirstMenu">
-            <div class="Logo"></div>
+            <div class="Logo"><input type="button" value="메인페이지" onclick="location.href='/main'"></div>
             <div class="Group1">
             <%
             Object user = session.getAttribute("user");
@@ -21,7 +21,7 @@
                 <%
             }else{
             	%>
-                <div><input type="button" value="마이페이지" onclick="location.href='/main'"></div>
+                <div><input type="button" value="마이페이지" onclick="location.href='/'"></div>
 			<%            	
             }
                 %>
