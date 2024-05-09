@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/src/main/webapp/resources/css/signIn.css">
+</head>
+<body>
+    <header>
+        <div class="FirstMenu">
+            <div class="Logo"></div>
+            <div class="Group1">
+                <div><input type="button" value="회원가입"></div>
+            </div>
+            <div class="Group2">
+                <div><input type="button" value="로그인"></div>
+            </div>
+        </div>
+        <div class="SecondMenu">
+            <div>차량 검색</div>
+            <div>렌트</div>
+            <div>게시판</div>
+            <div>공지사항</div>
+        </div>
+    </header>
+<form action="/signInFormAction" method="post">
+	<div class="Group33">
+		<div>
+			아이디<input type="text" name="id">
+		</div>
+	</div>
+	<div class="Group36">
+		<div>
+			비밀번호<input type="password" name="password">
+		</div>
+	</div>
+	<input type="submit" value="로그인">
+</form>
+<footer>
+	<div class="Footer-first">
+            <div>회사소개  서비스 이용약관</div>
+	</div>
+    <div class="Footer-first">
+        <div>주소 : <br>번호 : </div>
+	</div>
+</footer>
+</body>
+<c:import url="/footer" />
+</html>

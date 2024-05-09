@@ -1,0 +1,58 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 2px solid #FFA500; /* 밑줄 스타일 */
+}
+
+.FirstMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo {
+    width: 100px; /* 로고 크기에 맞게 조정 */
+    height: 50px; /* 로고 크기에 맞게 조정 */
+    background-color: #FFA500; /* 로고 배경색 */
+}
+
+.Group1,
+.Group2 {
+    display: flex;
+    align-items: center;
+}
+
+.Group1 input[type="button"],
+.Group2 input[type="button"] {
+    background-color: #FFA500; /* 버튼 배경색 */
+    color: #fff; /* 버튼 텍스트 색상 */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.SecondMenu {
+    display: flex;
+}
+
+.SecondMenu div {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-top: 2px solid #FFA500; /* 위쪽 선 스타일 */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.Rectangle2 {
+    display: flex;
+    justify-content: space-between;
+}
