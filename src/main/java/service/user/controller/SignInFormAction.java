@@ -36,8 +36,8 @@ public class SignInFormAction extends HttpServlet {
 			response.sendRedirect("/signIn");
 		} else {
 			HttpSession session = request.getSession();
-			response.sendRedirect("/main");
 			session.setAttribute("user", dto);
+			response.sendRedirect("/main");
 		}
 	}
 

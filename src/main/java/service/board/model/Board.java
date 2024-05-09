@@ -4,20 +4,20 @@ import java.sql.Timestamp;
 
 public class Board {
 	private int boardIndex;
+	private int number;
 	private String id;
 	private String title;
 	private String content;
-	private Timestamp write_date;
-	private Timestamp modify_date;
+	private Timestamp date;
 	
-	public Board(int boardIndex, String id, String title, String content, Timestamp write_date, Timestamp modify_date) {
+	public Board(int boardIndex, int number, String id, String title, String content, Timestamp date) {
 		super();
 		this.boardIndex = boardIndex;
+		this.number = number;
 		this.id = id;
 		this.title = title;
 		this.content = content;
-		this.write_date = write_date;
-		this.modify_date = modify_date;
+		this.date = date;
 	}
 
 	public int getBoardIndex() {
@@ -26,6 +26,14 @@ public class Board {
 
 	public void setBoardIndex(int boardIndex) {
 		this.boardIndex = boardIndex;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
 	}
 
 	public String getId() {
@@ -52,20 +60,12 @@ public class Board {
 		this.content = content;
 	}
 
-	public Timestamp getWrite_date() {
-		return write_date;
+	public Timestamp getDate() {
+		return date;
 	}
 
-	public void setWrite_date(Timestamp write_date) {
-		this.write_date = write_date;
+	public void setDate(Timestamp date) {
+		this.date = date;
 	}
 
-	public Timestamp getModify_date() {
-		return modify_date;
-	}
-
-	public void setModify_date(Timestamp modify_date) {
-		this.modify_date = modify_date;
-	}
-	
 }

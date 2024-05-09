@@ -1,6 +1,5 @@
 package service.user.model;
 
-import org.mindrot.jbcrypt.BCrypt;
 
 import service.util.DBConnection;
 import service.util.PasswordCrypto;
