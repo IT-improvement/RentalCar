@@ -18,6 +18,12 @@ public class SignInFormAction extends HttpServlet {
 		// TODO Auto-generated constructor stub
 	}
 
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		HttpSession session = req.getSession();
+		session.removeAttribute("user");
+		resp.sendRedirect("/main");
+	}
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
@@ -40,5 +46,5 @@ public class SignInFormAction extends HttpServlet {
 			response.sendRedirect("/main");
 		}
 	}
-
+	
 }
