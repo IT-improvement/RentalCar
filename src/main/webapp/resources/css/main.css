@@ -1,5 +1,12 @@
 @charset "UTF-8";
-
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-top: 2px solid #FFA500; /* 위쪽 선 스타일 */
+    bottom: 0;
+    width: 100%;
+}
 .content {
 	display: flex;
 	flex-direction: column;

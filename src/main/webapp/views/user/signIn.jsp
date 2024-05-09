@@ -11,19 +11,21 @@
 </head>
 <c:import url="/header" />
 <body>
-<form action="/signInFormAction" method="post">
-	<div class="Group33">
-		<div>
-			아이디<input type="text" name="id">
-		</div>
+	<div class="content">
+		<form action="/signInFormAction" method="post">
+			<div class="Group33">
+				<div>
+					아이디<input type="text" name="id">
+				</div>
+			</div>
+			<div class="Group36">
+				<div>
+					비밀번호<input type="password" name="password">
+				</div>
+			</div>
+			<input type="submit" value="로그인">
+		</form>
 	</div>
-	<div class="Group36">
-		<div>
-			비밀번호<input type="password" name="password">
-		</div>
-	</div>
-	<input type="submit" value="로그인">
-</form>
 </body>
 <c:import url="/footer" />
 </html>
