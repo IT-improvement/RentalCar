@@ -57,6 +57,7 @@
   	<servlet-name>signUp</servlet-name>
  	<url-pattern>/signUp</url-pattern>
   </servlet-mapping>
+  
   <servlet>
   	<servlet-name>signIn</servlet-name>
   	<jsp-file>/views/user/signIn.jsp</jsp-file>
@@ -65,4 +66,14 @@
   	<servlet-name>signIn</servlet-name>
  	<url-pattern>/signIn</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>main</servlet-name>
+  	<jsp-file>/views/user/main.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>main</servlet-name>
+ 	<url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

@@ -43,7 +43,7 @@ public class SignUpFormAction extends HttpServlet {
 		UserResponseDto result = dao.createUser(dto);
 
 		if (result == null) {
-			response.sendRedirect("/signUp");
+			response.sendRedirect("/main");
 			System.out.println("회원가입실패");
 		} else {
 			response.sendRedirect("/signIn");
