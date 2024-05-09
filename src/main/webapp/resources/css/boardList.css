@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.content {
+	height: 100vh;
+	margin-bottom: 100px;
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -13,7 +17,4 @@ th, td {
 
 th {
   background-color: #f2f2f2;
-}
-.content{
-	margin-top: 20px;
 }

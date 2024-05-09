@@ -49,9 +49,9 @@ footer {
     color: #fff;
     padding: 20px;
     border-top: 2px solid #FFA500; /* 위쪽 선 스타일 */
-    position: fixed;
     bottom: 0;
     width: 100%;
+    position: fixed;
 }
 
 .Rectangle2 {
