@@ -51,7 +51,7 @@ public class BoardDao extends DBConnection {
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, dto.getId());
 			pstmt.setString(2, dto.getTitle());
-			pstmt.setString(3, dto.getId());
+			pstmt.setString(3, dto.getContent());
 
 			pstmt.execute();
 		} catch (Exception e) {
