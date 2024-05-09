@@ -31,10 +31,10 @@
             </div>
         </div>
         <div class="SecondMenu">
-            <div>차량 검색</div>
-            <div>렌트</div>
-            <div>게시판</div>
-            <div>공지사항</div>
+            <div><a href="/signIn">차량 검색</a></div>
+            <div><a href="">렌트</a></div>
+            <div><a href="">게시판</a></div>
+            <div><a href="">공지사항</a></div>
         </div>
     </header>
 </body>
