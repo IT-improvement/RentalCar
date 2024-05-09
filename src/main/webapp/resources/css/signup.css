@@ -1,3 +1,14 @@
+.content {
+   display: inline-block;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    transform: translate(-50%, -50%); /* 화면 중앙으로 이동 */
+    position: absolute; /* 위치를 조정하기 위해 절대 위치 지정 */
+    top: 50%;
+    left: 50%;
+}
 form {
     padding: 20px;
     margin-top: 20px;
@@ -20,4 +31,9 @@ input[type="submit"] {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+}
+.number {
+    width: 30px; /* 너비 조정 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    padding: 5px; /* 입력란 내부 여백 조정 */
 }
