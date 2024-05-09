@@ -10,8 +10,7 @@
 <c:import url="/header" />
 <body>
 	<div class="content">
-		
 	</div>
 </body>
-<c:import url="/header" />
+<c:import url="/footer" />
 </html>

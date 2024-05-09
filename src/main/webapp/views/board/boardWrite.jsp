@@ -13,5 +13,5 @@
 		
 	</div>
 </body>
-<c:import url="/header" />
+<c:import url="/footer" />
 </html>

@@ -31,11 +31,11 @@
   
   <servlet>
   	<servlet-name>boardListFormAction</servlet-name>
-  	<servlet-class>service.user.controller.BoardListFormAction</servlet-class>
+  	<servlet-class>service.board.controller.BoardListFormAction</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>boardListFormAction</servlet-name>
- 	<url-pattern>/BoardListFormAction</url-pattern>
+ 	<url-pattern>/boardListFormAction</url-pattern>
   </servlet-mapping>
   
   
