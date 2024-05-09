@@ -46,6 +46,7 @@ public class SignUpFormAction extends HttpServlet {
 			response.sendRedirect("/signUp");
 			System.out.println("회원가입실패");
 		} else {
+			response.sendRedirect("/signIn");
 			System.out.println("회원가입성공");
 		}
 	}

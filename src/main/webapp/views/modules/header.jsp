@@ -1,3 +1,4 @@
+<%@page import="service.user.model.UserResponseDto"%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -12,7 +13,18 @@
         <div class="FirstMenu">
             <div class="Logo"></div>
             <div class="Group1">
+            <%
+            Object user = session.getAttribute("user");
+            if(user==null){
+            %>
                 <div><input type="button" value="회원가입" onclick="location.href='/signUp'"></div>
+                <%
+            }else{
+            	%>
+                <div><input type="button" value="마이페이지" onclick="location.href='/'"></div>
+			<%            	
+            }
+                %>
             </div>
             <div class="Group2">
                 <div><input type="button" value="로그인" onclick="location.href='/signIn'"></div>

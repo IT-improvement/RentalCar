@@ -1,11 +1,11 @@
-package service.user.controller;
+	package service.user.controller;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import service.user.model.UserDao;
 import service.user.model.UserResponseDto;
@@ -30,12 +30,14 @@ public class SignInFormAction extends HttpServlet {
 		
 		UserDao dao = UserDao.getInstance();
 		UserResponseDto dto = dao.findByIdAndPassword(id, password);
-		
+			
 		if (dto == null) {
 			System.out.println("로그인 실패");
 			response.sendRedirect("/signIn");
 		} else {
-			response.sendRedirect("");
+			HttpSession session = request.getSession();
+			response.sendRedirect("/");
+			session.setAttribute("user", dto);
 		}
 	}
 
