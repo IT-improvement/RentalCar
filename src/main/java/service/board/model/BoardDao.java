@@ -36,7 +36,6 @@ public class BoardDao extends DBConnection {
 				date = modify_date == null ? write_date : modify_date;
 				Board board = new Board(index, number, id, title, content, date);
 				number++;
-				System.out.println("등장");
 				boardList.add(board);
 			}
 		} catch (Exception e) {
@@ -44,5 +43,20 @@ public class BoardDao extends DBConnection {
 			System.out.println("게시판리스트 오류");
 		}
 		return boardList;
+	}
+	
+	public void writeBoard(BoardRequestDto dto) {
+		try {
+			String sql ="insert into board(id, title, content) values(?, ?, ?)";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, dto.getId());
+			pstmt.setString(2, dto.getTitle());
+			pstmt.setString(3, dto.getId());
+			
+			pstmt.execute();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("게시글 작성 오류");
+		}
 	}
 }

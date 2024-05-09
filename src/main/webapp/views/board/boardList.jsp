@@ -41,6 +41,7 @@
 				</c:choose>
 			</tbody>
 		</table>
+		<input type="button" value="작성하기" onclick="location.href='/boardWrite'">
 	</div>
 </body>
 <c:import url="/footer" />

@@ -9,7 +9,7 @@
 </head>
 <c:import url="/header" />
 <body>
-
+${user.id }
 </body>
 <c:import url="/footer" />
 </html>

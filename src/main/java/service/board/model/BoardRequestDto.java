@@ -2,25 +2,15 @@ package service.board.model;
 
 public class BoardRequestDto {
 
-	private int boardIndex;
 	private String id;
 	private String title;
 	private String content;
 	
-	public BoardRequestDto(int boardIndex, String id, String title, String content) {
+	public BoardRequestDto(String id, String title, String content) {
 		super();
-		this.boardIndex = boardIndex;
 		this.id = id;
 		this.title = title;
 		this.content = content;
-	}
-
-	public int getBoardIndex() {
-		return boardIndex;
-	}
-
-	public void setBoardIndex(int boardIndex) {
-		this.boardIndex = boardIndex;
 	}
 
 	public String getId() {

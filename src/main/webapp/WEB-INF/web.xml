@@ -78,7 +78,7 @@
   
   <servlet>
   	<servlet-name>main</servlet-name>
-  	<jsp-file>/views/user/main.jsp</jsp-file>
+  	<jsp-file>/views/main/main.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
   	<servlet-name>main</servlet-name>
