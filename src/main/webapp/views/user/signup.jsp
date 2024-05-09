@@ -40,12 +40,7 @@
 			<div class="Group-birthday">
 				<div>
 					ÁÖºó¹øÈ£<br>
-					<input type="text" class="number" name="birthday1">
-					<input type="text" class="number" name="birthday2">
-					<input type="text" class="number" name="birthday3">
-					<input type="text" class="number" name="birthday4">
-					<input type="text" class="number" name="birthday5">
-					<input type="text" class="number" name="birthday6">
+					<input type="text" class="number" name="birthday">
 					-<input type="text" class="number" name="gender">
 				</div>
 			</div>
