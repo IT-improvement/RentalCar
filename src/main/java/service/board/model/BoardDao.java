@@ -98,4 +98,22 @@ public class BoardDao extends DBConnection {
 			System.out.println("게시글 삭제 오류");
 		}
 	}
+	
+	public void updateBoard(int index, BoardRequestDto dto) {
+		try {
+			String sql = "update board set title=?, content=?, modify_datetime=? where boardIndex=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, dto.getTitle());
+			pstmt.setString(2, dto.getContent());
+			
+			Timestamp date = new Timestamp(System.currentTimeMillis());
+			pstmt.setTimestamp(3, date);
+			pstmt.setInt(4, index);
+			
+			pstmt.execute();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("게시판 수정 오류");
+		}
+	}
 }

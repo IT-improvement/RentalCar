@@ -56,6 +56,15 @@
  	<url-pattern>/boardDeleteFormAction</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>boardUpdateFormAction</servlet-name>
+  	<servlet-class>service.board.controller.BoardUpdateFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>boardUpdateFormAction</servlet-name>
+ 	<url-pattern>/boardUpdateFormAction</url-pattern>
+  </servlet-mapping>
+  
   
   <!-- JSP MAPPING -->
   <servlet>

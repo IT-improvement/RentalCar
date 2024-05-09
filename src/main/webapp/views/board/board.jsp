@@ -19,7 +19,7 @@
 	</div>
 	<div>
 		<c:if test="${board.id eq user.id }">
-			<input type="button" value="수정하기" onclick="location.href=''">
+			<input type="button" value="수정하기" onclick="location.href='/boardUpdateFormAction?index=${board.boardIndex}'">
 			<input type="button" value="삭제하기" onclick="location.href='/boardDeleteFormAction?index=${board.boardIndex}'">
 		</c:if>
 	</div>
