@@ -44,19 +44,45 @@ public class BoardDao extends DBConnection {
 		}
 		return boardList;
 	}
-	
+
 	public void writeBoard(BoardRequestDto dto) {
 		try {
-			String sql ="insert into board(id, title, content) values(?, ?, ?)";
+			String sql = "insert into board(id, title, content) values(?, ?, ?)";
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, dto.getId());
 			pstmt.setString(2, dto.getTitle());
 			pstmt.setString(3, dto.getId());
-			
+
 			pstmt.execute();
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("게시글 작성 오류");
 		}
+	}
+
+	public Board findboard(int index) {
+		Board board = new Board();
+		try {
+			String sql = "select * from board where boardIndex=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, index);
+
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				board.setBoardIndex(index);
+				board.setTitle(rs.getString("title"));
+				board.setContent(rs.getString("content"));
+				Timestamp write_date = rs.getTimestamp("write_datetime");
+				Timestamp modify_date = rs.getTimestamp("modify_datetime");
+				Timestamp date = null;
+				date = modify_date == null ? write_date : modify_date;
+				board.setDate(date);
+				board.setId(rs.getString("id"));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("게시간상세 오류");
+		}
+		return board;
 	}
 }

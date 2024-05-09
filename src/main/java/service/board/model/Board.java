@@ -10,6 +10,10 @@ public class Board {
 	private String content;
 	private Timestamp date;
 	
+	public Board() {
+		
+	}
+	
 	public Board(int boardIndex, int number, String id, String title, String content, Timestamp date) {
 		super();
 		this.boardIndex = boardIndex;

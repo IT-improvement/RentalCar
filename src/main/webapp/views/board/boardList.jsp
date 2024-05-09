@@ -32,7 +32,7 @@
 						<c:forEach items="${boardList }" var="board" varStatus="loop">
 						<tr>
 							<td>${ board.number }</td>
-							<td><a href="">${ board.title }</a></td>
+							<td><a href="/boardViewFormAction?index=${board.boardIndex }">${ board.title }</a></td>
 							<td>${ board.content }</td>
 							<td>${ board.date }</td>
 						</tr>

@@ -38,6 +38,15 @@
  	<url-pattern>/boardListFormAction</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>boardViewFormAction</servlet-name>
+  	<servlet-class>service.board.controller.BoardViewFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>boardViewFormAction</servlet-name>
+ 	<url-pattern>/boardViewFormAction</url-pattern>
+  </servlet-mapping>
+  
   
   <!-- JSP MAPPING -->
   <servlet>
@@ -101,6 +110,15 @@
   <servlet-mapping>
   	<servlet-name>boardWrite</servlet-name>
  	<url-pattern>/boardWrite</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>board</servlet-name>
+  	<jsp-file>/views/board/board.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>board</servlet-name>
+ 	<url-pattern>/board</url-pattern>
   </servlet-mapping>
   
 </web-app>
