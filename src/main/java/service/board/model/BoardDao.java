@@ -85,4 +85,17 @@ public class BoardDao extends DBConnection {
 		}
 		return board;
 	}
+	
+	public void deleteBoard(int index) {
+		try {
+			String sql = "delete from board where boardIndex=?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, index);
+			
+			pstmt.execute();
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("게시글 삭제 오류");
+		}
+	}
 }

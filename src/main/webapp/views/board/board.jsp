@@ -17,6 +17,12 @@
 		<span>작성시간</span>${board.date }<br>
 		<span>내용</span>${board.content }<br>
 	</div>
+	<div>
+		<c:if test="${board.id eq user.id }">
+			<input type="button" value="수정하기" onclick="location.href=''">
+			<input type="button" value="삭제하기" onclick="location.href='/boardDeleteFormAction?index=${board.boardIndex}'">
+		</c:if>
+	</div>
 </body>
 <c:import url="/footer" />
 </html>
