@@ -20,7 +20,7 @@ public class CarMainFormAction extends HttpServlet {
 		List<Car> carList = dao.top7CarList();
 		System.out.println(carList);
 		HttpSession session = request.getSession();
-		session.setAttribute("carList", carList);
+		session.setAttribute("carTop7List", carList);
 		response.sendRedirect("/main");
 	}
 

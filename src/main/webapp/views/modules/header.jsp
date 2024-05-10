@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="SecondMenu">
-            <div><a href="">차량 검색</a></div>
+            <div><a href="/carListFormAction">차량 검색</a></div>
             <div><a href="">렌트</a></div>
             <div><a href="/boardListFormAction">게시판</a></div>
             <div><a href="">공지사항</a></div>

@@ -15,7 +15,7 @@
 			<img class="adjimage" src="/resources/image/adj_1.jpg">
 		</div>
 		<div class="car">
-			<c:forEach items="${carList }" var="car" varStatus="loop">
+			<c:forEach items="${carTop7List }" var="car" varStatus="loop">
 				<div>
 					<a href=""><img alt="사진없음" src="${car.images[0] }"></a>
 					<p>${car.name }</p>

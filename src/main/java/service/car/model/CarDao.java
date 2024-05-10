@@ -40,8 +40,6 @@ public class CarDao extends DBConnection {
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("상위7개 리스트 오류");
-		} finally {
-			close();
 		}
 		return carList;
 	}

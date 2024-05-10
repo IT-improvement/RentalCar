@@ -15,66 +15,12 @@
 			<h2>차량검색</h2>
 		</div>
 		<div class="car">
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
-			<div>
-				<a href=""><img alt="사진없음" src="/resources/image/CAR001_1.png"></a>
-				<p>이름</p>
-			</div>
+			<c:forEach items="${carList }" var="car" varStatus="loop">
+				<div>
+					<a href=""><img alt="사진없음" src="${car.images[0] }"></a>
+					<p>${car.name }</p>
+				</div>
+			</c:forEach>
 		</div>
 	</div>
 </body>

@@ -157,4 +157,13 @@
  	<url-pattern>/board</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>carList</servlet-name>
+  	<jsp-file>/views/car/carList.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>carList</servlet-name>
+ 	<url-pattern>/carList</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
