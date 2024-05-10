@@ -17,9 +17,9 @@
                 <label for="email">이메일:</label>
                 <input type="text" id="email" name="email" value="${sessionScope.user.email }">
                 <label for="password">비밀번호:</label>
-                <input type="password" id="password" name="password" required>
-                <label for="confirmPassword">비밀번호 확인:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <input type="password" id="password" name="password">
+                <label for="passwordCheck">비밀번호 확인:</label>
+                <input type="password" id="passwordCheck" name="passwordCheck">
                 <div class="separator">
                 <label for="name">이름:</label>
                 <input type="text" id="name" name="name" value="${sessionScope.user.name }" maxlength="4">
@@ -35,9 +35,10 @@
 				    <input type="text" id="gender" name="gender" maxlength="1">
 				    <label >XXXXXX</label>
 				</div>
-            <button type="submit">수정 완료</button>
+            <input type="submit" value="수정하기">
         </form>
     </div>
 </body>
+<script type="text/javascript" src="/resources/js/updateUser.js"></script>
 <c:import url="/footer" />
 </html>
