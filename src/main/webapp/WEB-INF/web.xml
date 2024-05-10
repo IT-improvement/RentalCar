@@ -65,6 +65,15 @@
  	<url-pattern>/boardUpdateFormAction</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>carMainFormAction</servlet-name>
+  	<servlet-class>service.car.controller.CarMainFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>carMainFormAction</servlet-name>
+ 	<url-pattern>/carMainFormAction</url-pattern>
+  </servlet-mapping>
+  
   
   <!-- JSP MAPPING -->
   <servlet>

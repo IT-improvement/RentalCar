@@ -9,22 +9,16 @@ footer {
 }
 .content {
 	display: flex;
+	height:140vh;
 	flex-direction: column;
-	height: 100vh;
-	margin-bottom: 100px;
-}
-
-.adj, .car {
-	flex: 1; 
-	overflow-y: auto;
 }
 
 .adj {
+	height:70vh;
     overflow: hidden;
     display: flex; 
     justify-content: center;
     align-items: center;
-    height: 50%;
 }
 
 .adj img {
@@ -36,6 +30,7 @@ footer {
 .car {
 	display: flex;
 	flex-wrap: wrap;
+	height:auto;
 }
 
 .car div {
@@ -47,4 +42,28 @@ footer {
 .car img {
 	width: 100%;
 	height: auto;
+	border-radius: 5px;
+}
+.car p {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.car input[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.car input[type="button"]:hover {
+    background-color: #0056b3;
 }

@@ -18,9 +18,10 @@ public class CarMainFormAction extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		CarDao dao = CarDao.getInstance();
 		List<Car> carList = dao.top7CarList();
-		HttpSession session =request.getSession();
+		System.out.println(carList);
+		HttpSession session = request.getSession();
 		session.setAttribute("carList", carList);
-		
+		response.sendRedirect("/main");
 	}
 
 }

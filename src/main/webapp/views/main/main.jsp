@@ -17,9 +17,13 @@
 		<div class="car">
 			<c:forEach items="${carList }" var="car" varStatus="loop">
 				<div>
-					<img alt="사진없음" src="${car.imageUrl }"> <a>${car.name }</a>
+					<img alt="사진없음" src="${car.images[0] }">
+					<p>${car.name }</p>
 				</div>
 			</c:forEach>
+			<div>
+				<input type="button" value="더보기">
+			</div>
 		</div>
 	</div>
 </body>
