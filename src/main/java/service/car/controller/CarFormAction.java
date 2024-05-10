@@ -23,13 +23,4 @@ public class CarFormAction extends HttpServlet {
 		request.getRequestDispatcher("/car").forward(request, response);
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
-		String carnumber = request.getParameter("carnumber");
-		String retal_datetime = request.getParameter("start");
-		String return_datetime = request.getParameter("end");
-		String pay = request.getParameter("pay");
-	}
-
 }

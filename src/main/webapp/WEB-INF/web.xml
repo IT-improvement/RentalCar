@@ -83,7 +83,6 @@
  	<url-pattern>/carListFormAction</url-pattern>
   </servlet-mapping>
   
-  
   <servlet>
   	<servlet-name>carFormAction</servlet-name>
   	<servlet-class>service.car.controller.CarFormAction</servlet-class>
@@ -91,6 +90,15 @@
   <servlet-mapping>
   	<servlet-name>carFormAction</servlet-name>
  	<url-pattern>/carFormAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>reservationFormAction</servlet-name>
+  	<servlet-class>service.reservation.controller.ReservationFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>reservationFormAction</servlet-name>
+ 	<url-pattern>/reservationFormAction</url-pattern>
   </servlet-mapping>
   
   <!-- JSP MAPPING -->
@@ -185,12 +193,12 @@
   </servlet-mapping>
   
   <servlet>
-  	<servlet-name>carReservation</servlet-name>
-  	<jsp-file>/views/car/carReservation.jsp</jsp-file>
+  	<servlet-name>reservation</servlet-name>
+  	<jsp-file>/views/reservation/reservation.jsp</jsp-file>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>carReservation</servlet-name>
- 	<url-pattern>/carReservation</url-pattern>
+  	<servlet-name>reservation</servlet-name>
+ 	<url-pattern>/reservation</url-pattern>
   </servlet-mapping>
   
 </web-app>

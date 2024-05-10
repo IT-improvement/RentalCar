@@ -15,7 +15,7 @@
 			<div class="image">
 				<img alt="사진없음" src="${car.images[0] }">
 			</div>
-			<input type="button" class="reservation" value="예약하기" onclick="location.href='/carReservation?carnumber=${car.carnumber}&price=${car.price }'">
+			<input type="button" class="reservation" value="예약하기" onclick="location.href='/reservation?carnumber=${car.carnumber}&price=${car.price }'">
 		</div>
 		<div class="right">
 			<div class="info">
