@@ -1,0 +1,72 @@
+@charset "UTF-8";
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-top: 2px solid #FFA500; /* 위쪽 선 스타일 */
+    bottom: 0;
+    width: 100%;
+}
+.content {
+	display: flex;
+	height:140vh;
+	flex-direction: column;
+}
+
+.adj {
+	height:70vh;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.adj img {
+    width: 100%; 
+    height: auto; 
+    max-width: auto; 
+    max-height: 100%; 
+}
+.car {
+	display: flex;
+	flex-wrap: wrap;
+	height:auto;
+}
+
+.car div {
+	width: 25%; 
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.car img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+.car p {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+h2{
+	text-align:center;
+}
+
+.car input[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.car input[type="button"]:hover {
+    background-color: #0056b3;
+}

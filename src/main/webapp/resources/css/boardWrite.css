@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS for content div */
+/* CSS for content div */
+.box {
+  margin: 20px;
+}
+
+/* CSS for form */
+form {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* CSS for labels */
+span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* CSS for text inputs */
+input[type="text"] {
+  width: calc(100% - 10px); /* Adjusting width */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.box{
+	height: 400px;
+	width: 100%;
+}
+/* CSS for submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
