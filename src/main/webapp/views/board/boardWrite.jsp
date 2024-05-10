@@ -27,7 +27,7 @@
 		<input type="hidden" name="id" value="${user.id }">
 		<span>제목</span><input type="text" value="${board.title }" name="title"><br>
 		<span>내용</span><br>
-		<textarea name="content" class="content" placeholder="${board.content }">${board.content }
+		<textarea name="content" class="content" placeholder="${board.content }" cols="50" rows="10">${board.content }
 		</textarea>
 		<input type="submit" value="작성하기">
 	</form>
