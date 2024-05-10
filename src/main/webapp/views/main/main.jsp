@@ -18,7 +18,7 @@
 		<div class="car">
 			<c:forEach items="${carTop7List }" var="car" varStatus="loop">
 				<div class="list">
-					<a href=""><img alt="사진없음" src="${car.images[0] }"></a>
+					<a href="/carFormAction?carnumber=${car.carnumber }"><img alt="사진없음" src="${car.images[0] }"></a>
 					<p>${car.name }</p>
 				</div>
 			</c:forEach>

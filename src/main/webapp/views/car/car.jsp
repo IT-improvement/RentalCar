@@ -13,16 +13,16 @@
 	<div class="content">
 		<div class="left">
 			<div class="image">
-				<img src="/resources/image/CAR001_1.png">
+				<img alt="사진없음" src="${car.images[0] }">
 			</div>
 			<input type="button" class="reservation" value="예약하기">
 		</div>
 		<div class="right">
 			<div class="info">
-			<label>이름</label>
-			<label>정보</label>
-			<label>기름</label>
-			<label>타입</label>
+			<label>이름</label><p>${car.name }</p>
+			<label>타입</label><p>${car.type }</p>
+			<label>기름</label><p>${car.oil }</p>
+			<label>정보</label><p>${car.info }</p>
 			</div>
 		</div>
 	</div>

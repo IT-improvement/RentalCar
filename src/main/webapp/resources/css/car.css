@@ -40,10 +40,20 @@
 }
 
 .info {
-	font-size: 18px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .info label {
+	font-weight: bold;
+	margin-bottom: 5px;
 	display: block;
-	margin-bottom: 10px;
+}
+
+.info p {
+	margin: 0;
+	font-size: 16px;
 }
