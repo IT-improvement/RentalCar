@@ -84,6 +84,15 @@
   </servlet-mapping>
   
   
+  <servlet>
+  	<servlet-name>carFormAction</servlet-name>
+  	<servlet-class>service.car.controller.CarFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>carFormAction</servlet-name>
+ 	<url-pattern>/carFormAction</url-pattern>
+  </servlet-mapping>
+  
   <!-- JSP MAPPING -->
   <servlet>
   	<servlet-name>header</servlet-name>
@@ -164,6 +173,15 @@
   <servlet-mapping>
   	<servlet-name>carList</servlet-name>
  	<url-pattern>/carList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>car</servlet-name>
+  	<jsp-file>/views/car/car.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>car</servlet-name>
+ 	<url-pattern>/car</url-pattern>
   </servlet-mapping>
   
 </web-app>
