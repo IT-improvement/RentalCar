@@ -11,6 +11,7 @@ footer {
 	display: flex;
 	height:140vh;
 	flex-direction: column;
+	margin-bottom:100px;
 }
 
 .adj {
