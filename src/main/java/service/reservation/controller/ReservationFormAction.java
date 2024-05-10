@@ -1,15 +1,17 @@
 package service.reservation.controller;
 
 import java.io.IOException;
+import java.sql.Timestamp;
+
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
-/**
- * Servlet implementation class ReservationFormAction
- */
+import service.reservation.model.ReservationRequestDto;
+import service.user.model.UserResponseDto;
+
 public class ReservationFormAction extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -21,13 +23,20 @@ public class ReservationFormAction extends HttpServlet {
 			throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		String carnumber = request.getParameter("carnumber");
-		String retal_datetime = request.getParameter("start");
-		String return_datetime = request.getParameter("end");
+		Timestamp retal_datetime = Timestamp.valueOf(request.getParameter("start"));
+		Timestamp return_datetime = Timestamp.valueOf(request.getParameter("end"));
 		String pay = request.getParameter("pay");
-		System.out.println(carnumber);
-		System.out.println(retal_datetime);
-		System.out.println(return_datetime);
-		System.out.println(pay);
+		int price = Integer.parseInt(request.getParameter("price"));
+		HttpSession session = request.getSession();
+		UserResponseDto user = (UserResponseDto)session.getAttribute("user");
+		String id =user.getId();
+		
+		double term =(return_datetime.getTime()-retal_datetime.getTime())/(1000*60*60*24);
+		System.out.println(term);
+		int result = (int) (price*term);
+		System.out.println(result);
+		ReservationRequestDto dto = new ReservationRequestDto(id, carnumber, retal_datetime, return_datetime, pay, result);
 	}
+	
 
 }

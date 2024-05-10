@@ -3,18 +3,20 @@ $(document).ready(function() {
         singleDatePicker: true,
         alwaysOpen: true,
         timePicker: true,
+       	timePicker24Hour: true,
         minDate: moment().format('YYYYMMDD'),
         locale: {
-            format: 'YYYY/MM/DD hh:mm A'
+            format: 'YYYY-MM-DD HH:mm:ss'
         }
     });
     $('input[name="end"]').daterangepicker({
         singleDatePicker: true,
         alwaysOpen: true,
         timePicker: true,
+       	timePicker24Hour: true,
         minDate: moment().add(1, 'days').format('YYYYMMDD'),
         locale: {
-            format: 'YYYY/MM/DD hh:mm A'
+            format: 'YYYY-MM-DD HH:mm:ss'
         }
     });
 

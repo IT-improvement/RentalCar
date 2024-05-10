@@ -15,7 +15,7 @@
 <c:import url="/header" />
 <body>
 	<div class="content">
-		<form action="/carFormAction" method="post">
+		<form action="/reservationFormAction" method="post">
 			<input type="hidden" value="${param.carnumber }" name="carnumber">
 			<input type="hidden" value="${param.price }" name="price">
 			<div class="left">
