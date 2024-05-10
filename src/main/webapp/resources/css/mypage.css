@@ -1,1 +1,57 @@
-@charset "UTF-8";
+.container {
+    display: flex;
+}
+
+.Sidebar {
+    width: 250px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.info {
+    margin-bottom: 30px;
+}
+
+.username {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.greeting {
+    font-size: 16px;
+    color: #666;
+}
+
+.click-user, .click-reservation, .click-cancel {
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height:40px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.latest-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.latest-reservation, .latest-cancellation {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.latest-reservation p, .latest-cancellation p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
