@@ -30,6 +30,15 @@
   </servlet-mapping>
   
   <servlet>
+  	<servlet-name>mypageFormAction</servlet-name>
+  	<servlet-class>service.user.controller.MypageFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>mypageFormAction</servlet-name>
+ 	<url-pattern>/mypageFormAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
   	<servlet-name>boardListFormAction</servlet-name>
   	<servlet-class>service.board.controller.BoardListFormAction</servlet-class>
   </servlet>
@@ -145,6 +154,15 @@
   <servlet-mapping>
   	<servlet-name>main</servlet-name>
  	<url-pattern>/main</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>mypage</servlet-name>
+  	<jsp-file>/views/main/mypage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>mypage</servlet-name>
+ 	<url-pattern>/mypage</url-pattern>
   </servlet-mapping>
   
    <servlet>
