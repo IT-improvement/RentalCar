@@ -16,7 +16,7 @@
 				<div class="username">${sessionScope.user.name}고객님</div>
 				<div class="greeting">반갑습니다.</div>
 			</div>
-			<div class="click-user">회원정보 수정</div>
+			<div class="click-user" onclick="location.href='/updateUser'">회원정보 수정</div>
 			<div class="click-reservation">렌트 예약 내역</div>
 			<div class="click-cancel">렌트 취소 내역</div>
 		</div>

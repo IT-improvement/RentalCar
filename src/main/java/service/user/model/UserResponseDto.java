@@ -6,10 +6,10 @@ public class UserResponseDto {
 	public String name;
 	public String phonenumber;
 	public String email;
-	public String brithday;
+	public String birthday;
 	public String gender;
 
-	public UserResponseDto(String id, String password, String name, String phonenumber, String email, String brithday,
+	public UserResponseDto(String id, String password, String name, String phonenumber, String email, String birthday,
 			String gender) {
 		super();
 		this.id = id;
@@ -17,7 +17,7 @@ public class UserResponseDto {
 		this.name = name;
 		this.phonenumber = phonenumber;
 		this.email = email;
-		this.brithday = brithday;
+		this.birthday = birthday;
 		this.gender = gender;
 	}
 
@@ -27,7 +27,7 @@ public class UserResponseDto {
 		this.name = user.getName();
 		this.phonenumber = user.getPhonenumber();
 		this.email = user.getEmail();
-		this.brithday = user.getBrithday();
+		this.birthday = user.getBrithday();
 		this.gender = user.getGender();
 	}
 
@@ -71,12 +71,12 @@ public class UserResponseDto {
 		this.email = email;
 	}
 
-	public String getBrithday() {
-		return brithday;
+	public String getBirthday() {
+		return birthday;
 	}
 
-	public void setBrithday(String brithday) {
-		this.brithday = brithday;
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
 	}
 
 	public String getGender() {

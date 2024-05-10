@@ -148,6 +148,15 @@
   </servlet-mapping>
   
   <servlet>
+  	<servlet-name>updateUser</servlet-name>
+  	<jsp-file>/views/user/updateuser.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updateUser</servlet-name>
+ 	<url-pattern>/updateUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
   	<servlet-name>main</servlet-name>
   	<jsp-file>/views/main/main.jsp</jsp-file>
   </servlet>
