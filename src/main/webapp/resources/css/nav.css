@@ -1,3 +1,5 @@
+@import url("/reset.css");
+
 header {
     background-color: rgb(255,247,259);
     padding: 20px;
@@ -19,11 +21,17 @@ header {
 .Logo input[type="button"],
 .Group1 input[type="button"],
 .Group2 input[type="button"] {
-    background-color: #FFA500; /* 버튼 배경색 */
-    color: #fff; /* 버튼 텍스트 색상 */
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+  background-color: #FFA500;
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .SecondMenu {

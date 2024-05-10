@@ -6,28 +6,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="/resources/css/main.css">
+<link rel="stylesheet" href="/resources/css/carList.css">
 </head>
 <c:import url="/header" />
 <body>
 	<div class="content">
-		<div class="adj">
-			<img class="adjimage" src="/resources/image/adj_1.jpg">
+		<div class="title">
+			<h2>차량검색</h2>
 		</div>
-		<h2>인기 상품</h2>
 		<div class="car">
-			<c:forEach items="${carTop7List }" var="car" varStatus="loop">
-				<div class="list">
+			<c:forEach items="${carList }" var="car" varStatus="loop">
+				<div>
 					<a href="/carFormAction?carnumber=${car.carnumber }"><img alt="사진없음" src="${car.images[0] }"></a>
 					<p>${car.name }</p>
 				</div>
 			</c:forEach>
-			<div>
-				<input type="button" value="더보기" >
-			</div>
 		</div>
 	</div>
 </body>
 <c:import url="/footer" />
-<script type="text/javascript" src="/resources/js/main.js"></script>
 </html>
