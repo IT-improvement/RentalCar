@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.content {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px; /* 추가된 간격 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* 수정된 간격 */
+    font-weight: bold;
+}
+
+.pay {
+    color: #009688;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* 수정된 간격 */
+}
+
+input[type="submit"]:hover {
+    background-color: #00796b;
+}
+
+.info {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.info label {
+    font-weight: bold;
+    margin-bottom: 10px; /* 수정된 간격 */
+    display: block;
+}
+
+.info p {
+    margin: 5px 0;
+    font-size: 16px;
+}

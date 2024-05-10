@@ -184,4 +184,13 @@
  	<url-pattern>/car</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>carReservation</servlet-name>
+  	<jsp-file>/views/car/carReservation.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>carReservation</servlet-name>
+ 	<url-pattern>/carReservation</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
