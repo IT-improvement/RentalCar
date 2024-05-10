@@ -21,7 +21,7 @@
                 <%
             }else{
             	%>
-                <div><input type="button" value="마이페이지" onclick="location.href='/'"></div>
+                <div><input type="button" value="마이페이지" onclick="location.href='/mypageFormAction'"></div>
 			<%            	
             }
                 %>

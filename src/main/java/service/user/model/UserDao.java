@@ -1,6 +1,10 @@
 package service.user.model;
 
+import java.util.List;
+import java.util.Vector;
 
+import service.reservation.model.ReservationDao;
+import service.reservation.model.ReservationResponseDto;
 import service.util.DBConnection;
 import service.util.PasswordCrypto;
 
@@ -72,5 +76,51 @@ public class UserDao extends DBConnection {
 			System.out.println("로그인 로직 실패");
 		}
 		return dto;
+	}
+
+	public List<ReservationResponseDto> reservationLIst(String id) {
+		List<ReservationResponseDto> list = new Vector<ReservationResponseDto>();
+		try { 
+			String sql="SELECT id, carnumber, reservation_datetime, returncar FROM reservation WHERE id =?";
+			pstmt =conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				ReservationResponseDto dto = new ReservationResponseDto();
+				dto.setId(rs.getString("id"));
+				dto.setCarnumber(rs.getString("carnumber"));
+				dto.setReservation_datetime(rs.getTimestamp("reservation_datetime"));
+				dto.setReturncar(rs.getBoolean("returncar"));
+				
+				list.add(dto);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("예약현황 오류");
+		}
+		return list;
+	}
+	
+	public List<ReservationResponseDto> cancleList(String id) {
+		List<ReservationResponseDto> list = new Vector<ReservationResponseDto>();
+		try { 
+			String sql="SELECT id, carnumber, reservation_datetime, returncar FROM reservation WHERE id =? and cancle=true";
+			pstmt =conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				ReservationResponseDto dto = new ReservationResponseDto();
+				dto.setId(rs.getString("id"));
+				dto.setCarnumber(rs.getString("carnumber"));
+				dto.setReservation_datetime(rs.getTimestamp("reservation_datetime"));
+				dto.setReturncar(rs.getBoolean("returncar"));
+				
+				list.add(dto);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("예약현황 오류");
+		}
+		return list;
 	}
 }

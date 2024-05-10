@@ -55,3 +55,12 @@
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+.latest-reservation div, .latest-cancellation div {
+    margin-top: 10px;
+}
+
+.latest-reservation span, .latest-cancellation span {
+    display: block;
+    margin-bottom: 5px;
+}

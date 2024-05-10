@@ -13,6 +13,9 @@ public class ReservationResponseDto {
 	private boolean cancle;
 	private boolean returncar;
 	
+	public ReservationResponseDto() {
+		
+	}
 	
 	public ReservationResponseDto(String id, String carnumber, Timestamp reservation_datetime, Timestamp retal_datetime,
 			Timestamp return_datetime, String pay_type, int pay) {
