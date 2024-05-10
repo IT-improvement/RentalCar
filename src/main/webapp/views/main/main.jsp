@@ -14,15 +14,16 @@
 		<div class="adj">
 			<img class="adjimage" src="/resources/image/adj_1.jpg">
 		</div>
+		<h2>인기 상품</h2>
 		<div class="car">
 			<c:forEach items="${carTop7List }" var="car" varStatus="loop">
-				<div>
+				<div class="list">
 					<a href=""><img alt="사진없음" src="${car.images[0] }"></a>
 					<p>${car.name }</p>
 				</div>
 			</c:forEach>
 			<div>
-				<input type="button" value="더보기">
+				<input type="button" value="더보기" >
 			</div>
 		</div>
 	</div>
