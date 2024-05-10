@@ -65,6 +65,41 @@
  	<url-pattern>/boardUpdateFormAction</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>carMainFormAction</servlet-name>
+  	<servlet-class>service.car.controller.CarMainFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>carMainFormAction</servlet-name>
+ 	<url-pattern>/carMainFormAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>carListFormAction</servlet-name>
+  	<servlet-class>service.car.controller.CarListFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>carListFormAction</servlet-name>
+ 	<url-pattern>/carListFormAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>carFormAction</servlet-name>
+  	<servlet-class>service.car.controller.CarFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>carFormAction</servlet-name>
+ 	<url-pattern>/carFormAction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>reservationFormAction</servlet-name>
+  	<servlet-class>service.reservation.controller.ReservationFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>reservationFormAction</servlet-name>
+ 	<url-pattern>/reservationFormAction</url-pattern>
+  </servlet-mapping>
   
   <!-- JSP MAPPING -->
   <servlet>
@@ -137,6 +172,33 @@
   <servlet-mapping>
   	<servlet-name>board</servlet-name>
  	<url-pattern>/board</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>carList</servlet-name>
+  	<jsp-file>/views/car/carList.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>carList</servlet-name>
+ 	<url-pattern>/carList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>car</servlet-name>
+  	<jsp-file>/views/car/car.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>car</servlet-name>
+ 	<url-pattern>/car</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>reservation</servlet-name>
+  	<jsp-file>/views/reservation/reservation.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>reservation</servlet-name>
+ 	<url-pattern>/reservation</url-pattern>
   </servlet-mapping>
   
 </web-app>

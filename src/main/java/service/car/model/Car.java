@@ -8,6 +8,7 @@ public class Car {
 	private String info;
 	private int viewcount;
 	private String[] images;
+	private int price;
 	
 	public Car() {
 		
@@ -78,6 +79,14 @@ public class Car {
 
 	public void setImages(String[] images) {
 		this.images = images;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	
 	
