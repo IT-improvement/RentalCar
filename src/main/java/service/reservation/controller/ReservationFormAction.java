@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import service.reservation.model.ReservationDao;
 import service.reservation.model.ReservationRequestDto;
+import service.reservation.model.ReservationResponseDto;
 import service.user.model.UserResponseDto;
 
 public class ReservationFormAction extends HttpServlet {
@@ -36,6 +38,11 @@ public class ReservationFormAction extends HttpServlet {
 		int result = (int) (price*term);
 		System.out.println(result);
 		ReservationRequestDto dto = new ReservationRequestDto(id, carnumber, retal_datetime, return_datetime, pay, result);
+	
+		ReservationDao dao = ReservationDao.getInstance();
+		ReservationResponseDto reservationResponseDto = dao.reservation(dto);
+		request.setAttribute("receipt", reservationResponseDto);
+		request.getRequestDispatcher("/main").forward(request, response);
 	}
 	
 

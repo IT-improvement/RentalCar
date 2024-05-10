@@ -5,17 +5,17 @@ import java.sql.Timestamp;
 public class ReservationRequestDto {
 	private String id;
 	private String carnumber;
-	private Timestamp reservation_datetime;
+	private Timestamp retal_datetime;
 	private Timestamp return_datetime;
 	private String pay_type;
 	private int pay;
 	
-	public ReservationRequestDto(String id, String carnumber, Timestamp reservation_datetime, Timestamp return_datetime,
+	public ReservationRequestDto(String id, String carnumber, Timestamp retal_datetime, Timestamp return_datetime,
 			String pay_type, int pay) {
 		super();
 		this.id = id;
 		this.carnumber = carnumber;
-		this.reservation_datetime = reservation_datetime;
+		this.retal_datetime = retal_datetime;
 		this.return_datetime = return_datetime;
 		this.pay_type = pay_type;
 		this.pay = pay;
@@ -37,12 +37,12 @@ public class ReservationRequestDto {
 		this.carnumber = carnumber;
 	}
 
-	public Timestamp getReservation_datetime() {
-		return reservation_datetime;
+	public Timestamp getRetal_datetime() {
+		return retal_datetime;
 	}
 
-	public void setReservation_datetime(Timestamp reservation_datetime) {
-		this.reservation_datetime = reservation_datetime;
+	public void setRetal_datetime(Timestamp retal_datetime) {
+		this.retal_datetime = retal_datetime;
 	}
 
 	public Timestamp getReturn_datetime() {
