@@ -74,6 +74,15 @@
  	<url-pattern>/carMainFormAction</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>carListFormAction</servlet-name>
+  	<servlet-class>service.car.controller.CarListFormAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>carListFormAction</servlet-name>
+ 	<url-pattern>/carListFormAction</url-pattern>
+  </servlet-mapping>
+  
   
   <!-- JSP MAPPING -->
   <servlet>
