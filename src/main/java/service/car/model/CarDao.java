@@ -83,6 +83,7 @@ public class CarDao extends DBConnection {
 				car.setName(rs.getString("name"));
 				car.setOil(rs.getString("oil"));
 				car.setInfo(rs.getString("info"));
+				car.setPrice(rs.getInt("price"));
 				car.setImages(carimages(carnumber));
 			}
 		} catch (Exception e) {

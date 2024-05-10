@@ -16,15 +16,28 @@
 <body>
 	<div class="content">
 		<form action="/carFormAction" method="post">
-			<input type="hidden" value="${carnumber }">
+			<input type="hidden" value="${param.carnumber }" name="carnumber">
+			<input type="hidden" value="${param.price }" name="price">
 			<div class="left">
-				<input type="text" name="start" />
-				<input type="text" name="end" />
+			    <input type="text" name="start" />
+			    <input type="text" name="end" />
+			    <div class="error-message"></div>
 			</div>
 			<div class="right">
 				<div>
-					<label>결재방식</label>
-					<label class="pay">무통장입금</label>
+					<span class="title">결재방식</span>
+					<div class="radio-button">
+						<input type="radio" id="non" name="pay" value="non" checked>
+						<input type="radio" id="card" name="pay" value="card">
+						<label id="pay-non" for="non">
+							<div><span>무통장입금</span></div>
+						</label>
+						<label id="pay-card" for="card">
+							<div><span>카드결제</span></div>
+						</label>
+					</div>
+					<span class="title">하루 가격</span>
+					<label class="price">${param.price }</label>
 				</div>
 			</div>
 			<input type="submit" value="예약하기">

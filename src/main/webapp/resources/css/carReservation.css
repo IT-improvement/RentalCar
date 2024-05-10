@@ -19,17 +19,14 @@ input[type="text"] {
     border-radius: 5px;
     box-sizing: border-box;
 }
-
-label {
+input[type="radio"]{
+	display:none;
+}
+.title {
     display: block;
     margin-bottom: 10px; /* 수정된 간격 */
     font-weight: bold;
 }
-
-.pay {
-    color: #009688;
-}
-
 input[type="submit"] {
     padding: 10px 20px;
     background-color: #009688;
@@ -44,22 +41,31 @@ input[type="submit"]:hover {
     background-color: #00796b;
 }
 
-.info {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 20px;
-    width: 300px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+label {
+    cursor: pointer;
 }
-
-.info label {
-    font-weight: bold;
-    margin-bottom: 10px; /* 수정된 간격 */
-    display: block;
+.error-message {
+    display: inline-block;
+    margin-left: 10px; /* 오른쪽 여백 조정 */
+    vertical-align: top; /* 입력란과 오류 메시지를 수직 정렬 */
+    color: red;
 }
-
-.info p {
-    margin: 5px 0;
-    font-size: 16px;
+.radio-button{
+	display: inline-flex;
+	padding: 10px;
+}
+.radio-button div{
+	width: 80px;
+    padding: 10px;
+    border: solid 1px lightgrey;
+    text-align:center;
+}
+#non:checked~#pay-non span,
+#card:checked~#pay-card span{
+	color: #00796b;
+}
+#non:checked~#pay-non div,
+#card:checked~#pay-card div{
+	
+	border: solid 1px #00796b;
 }

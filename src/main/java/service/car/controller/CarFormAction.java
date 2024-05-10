@@ -29,6 +29,7 @@ public class CarFormAction extends HttpServlet {
 		String carnumber = request.getParameter("carnumber");
 		String retal_datetime = request.getParameter("start");
 		String return_datetime = request.getParameter("end");
+		String pay = request.getParameter("pay");
 	}
 
 }
